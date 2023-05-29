@@ -5,6 +5,8 @@
 
 body {
     margin: 75px 25% 75px 25%;
+    overflow: auto;
+    word-wrap: break-word;
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.2;
 }
@@ -31,4 +33,10 @@ img {
     width: 100%;
 }
 
+@media screen and (max-width: 45rem){
+
+    body {
+        margin: 75px 5% 75px 5%;
+    }
+}
 
