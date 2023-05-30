@@ -17,6 +17,11 @@ const api_url = `https://api.are.na/v2/channels/${section}?per=100`;
             document.body.appendChild(blogTitle);
             document.getElementById("blog-title").innerHTML = data.title;
 
+            let ownerName = document.createElement("h3");
+            ownerName.setAttribute("id", "owner-name");
+            document.body.appendChild(ownerName);
+            document.getElementById("owner-name").innerHTML = data.owner.full_name;
+
             for (let i = data.contents.length-1; i > 0; i--) {
                 console.log(i)
 
